@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<p lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+    <script src="play-all-model-animations.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="room" src="picture/nv.png">
+      </a-assets>
+
+      <a-text value="Bueng Nong Waeng Trachu Public Park" position="-2 1.5 -2" animation="property: position; to: -3 2.5 -2 ; dur: 2000; easing: linear; loop: false"></a-text>
+      <a-text value="It's a place to exercise. There are aerobic activities in the evening and a place to sit and relax the mind. And the surrounding area is full of many restaurants." position="-5 2 -2.2" animation="property: position; to: -3 1.5 -2.2; dur: 2000; easing: linear; loop: false"></a-text>
+      
+      <a-sky color="#ECFFFF" src="#room" radius="40"></a-sky>
+
+      <a-sound src="music/and.mp3" autoplay="true" position="0 2 5" volume="1" loop="true"></a-sound>
+
+      <a-gltf-model position="16 -13 -11"  rotation="10 -9 -5" scale="0.01 0.01 0.01" src="models/katoon.gltf"></a-gltf-model>
+
+      <a-gltf-model position="-15 -7 -3"  rotation="9 -8 -5" scale="3 3 3" src="models/p5.gltf" animation__rotation="property: rotation; to: 0 90 0; loop: true; dur: 2000"></a-gltf-model>></a-gltf-model>
+      <a-gltf-model position="-13 -9 -7"  rotation="9 -8 -5"  scale="3 3 3" src="models/p4.gltf" animation__rotation="property: rotation; to: 0 90 0; loop: true; dur: 2000"></a-gltf-model>></a-gltf-model>
+      <a-gltf-model position="-8 -9 -9"  rotation="9 -8 -5"  scale="3 3 3" src="models/P1.gltf" animation__rotation="property: rotation; to: 0 90 0; loop: true; dur: 2000"></a-gltf-model>></a-gltf-model>
+      <a-gltf-model position="-2 -8 -9"  rotation="9 -8 -5"  scale="3 3 3" src="models/p2.gltf" animation__rotation="property: rotation; to: 0 90 0; loop: true; dur: 2000"></a-gltf-model>></a-gltf-model>
+      <a-gltf-model position="5 -9 -10"  rotation="9 -8 -5"  scale="3 3 3" src="models/p3.gltf" animation__rotation="property: rotation; to: 0 90 0; loop: true; dur: 2000"></a-gltf-model>></a-gltf-model>
+      <a-gltf-model position="27 -11 24"  rotation="9 -8 -5"  scale="5 5 5" src="models/car.gltf" ></a-gltf-model>
+      <a-gltf-model position="-25 -23 35"  rotation="9 -8 -5"  scale="3 3 3" src="models/rampong.gltf"></a-gltf-model>
+
+      <a-gltf-model position="-11 9 10"  rotation="9 -8 -5" scale="0.1 0.1 0.1" src="models/bird.gltf" animation__rotation="property: rotation; to: 0 90 0; loop: true; dur: 5000"></a-gltf-model>
+      
+    
+
+      <a-gltf-model position="7 -9 8" rotation="6 -8 10" scale="3 3 3" src="models/rabbit.gltf" animation__rotation="property: rotation; to: 0 90 0; loop: true; dur: 2000"></a-gltf-model>
+
+    </a-scene>
+  </body>
+</html>
+
